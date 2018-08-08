@@ -15,11 +15,11 @@ public class RevisaoLogicos {
     }
     public void not(boolean[] col1, boolean[] col2, boolean[] res) {
         for (int i = 0; i < 4; i++) {
-            res[i] = (col1[i] && col2[i]);
+            res[i] = !(col1[i] && col2[i]);
             System.out.printf("%s not %s = %s \n", col1[i], col2[i], res[i]);
         }
     }
-    public static void main(string[] args) {
+    public static void main(String[] args) {
         boolean[] coluna1 = { true, true, false, false };
         boolean[] coluna2 = { true, false, true, false };
         boolean[] resultado =  new boolean[4];
